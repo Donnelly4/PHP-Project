@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: blueviolet;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+  display: flex; /* Arrange logo and navigation bar horizontally */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align vertically */
+  padding: 1rem 2rem; /* Add some padding */
+  background-color: #f1f1f1; /* Light background color */
+}
+
+.logo img {
+  width: 50px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar {
+  display: flex;
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Text color */
+  padding: 1rem 1.5rem; /* Add some padding */
+  font-weight: bold; /* Bold text */
+}
+
+.navbar a:hover {
+  background-color: #ddd; /* Hover effect */
+  color: #000; /* Change text color on hover */
+}
+
+.menu-btn { /* Assuming this is a hamburger menu icon */
+  display: none; /* Hide on large screens */
+  font-size: 2rem; /* Adjust icon size */
+  color: #333; /* Icon color */
+  cursor: pointer; /* Indicate interaction on hover */
+}
+
+/* Media Queries (adjust styles for smaller screens) */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide navigation bar on small screens */
+  }
+  .menu-btn {
+    display: block; /* Show hamburger menu icon on small screens */
+  }
+}
+
+/* Home Section Styles */
+.home {
+    padding: 2rem 0 25rem; /* Add some padding */
+    background-size: cover;
+    background-position: center;
+    background-image: url("FCBlogo.png"); /* Set the image as the background of the section*/
+    background-repeat: no-repeat;
+}
+
+
+.home-slider {
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide overflow for slider effect */
+}
+
+.slide {
+  background-size: cover; /* Cover the entire slide container */
+  background-position: center; /* Center the background image */
+  position: relative;
+}
+
+.content.absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center content vertically and horizontally */
+  color: yellowgreen;
+  text-align: center; /* Center text alignment */
+}
+
+.content h1 {
+  font-size: 3rem; /* Adjust heading size */
+  margin-bottom: 1rem; /* Add some space after heading */
+  color: yellowgreen;
+}
+
+.content p {
+  font-size: 1.2rem; /* Adjust paragraph size */
+  color: yellowgreen;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: blueviolet;
+  border-radius: 5px;
+}
+h1 {
+  text-align: center;
+  margin: bottom;
+}
+/*input fields*/
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form.control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+/*button styles*/
+button[type="submit"] {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* Footer Styles */
+.footer {
+    padding: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    text-align: center; /* Center footer content */
+    background-color: #333;
+    color: #fff;
+}
+
+.box {
+  display: inline-block; /* Display boxes side-by-side */
+  margin: 0 1rem; /* Add some space between boxes */
+  padding: 1rem;
+}
+
+.credit {
+  margin-top: 1rem; /* Add some space above credit */
+}
+
+.credit span {
+  font-weight: bold; /* Bold credit name */
+}
+
+.player {
+  float: left;
+  width: 50%;
+  margin: 0 10px 10px 0;
+}
