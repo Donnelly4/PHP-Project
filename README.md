@@ -8,7 +8,8 @@ Installations needed
 - XAMPP server
 - VS Code
 To run the program:
-XAMPP server was used as a local host, it had the database (wcl_players) and tables (player and user table).
+XAMPP server was used as a local host, it had the database (wcl_players) and tables (player and user table)
+
 To run the program on local host this URL is used http://localhost/SchoolProject
 
  ## Using the program
